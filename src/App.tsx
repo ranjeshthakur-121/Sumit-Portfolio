@@ -41,7 +41,6 @@ export default function App() {
     }, 700); 
   };
 
-  // Desktop Wheel Handler
   useEffect(() => {
     if (isMobile) return;
 
