@@ -13,7 +13,6 @@ export default function App() {
   
   const isScrolling = useRef(false);
 
-  // Detect mobile
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
