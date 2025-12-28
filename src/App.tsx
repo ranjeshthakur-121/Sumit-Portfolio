@@ -20,7 +20,6 @@ export default function App() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Smooth scroll logic
   const smoothScrollTo = (index: number) => {
     if (!containerRef.current || isScrolling.current) return;
     
@@ -35,7 +34,6 @@ export default function App() {
       behavior: "smooth"
     });
 
-    // Timeout matches the smooth scroll duration to unlock
     setTimeout(() => {
       isScrolling.current = false;
     }, 700); 
@@ -62,7 +60,6 @@ export default function App() {
     return () => container?.removeEventListener("wheel", handleWheel);
   }, [activeIndex, isMobile]);
 
-  // Mobile View
   if (isMobile) {
     return (
       <div className="min-h-screen bg-gray-50">
