@@ -11,7 +11,6 @@ export default function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
   
-  // Prevents multiple wheel events from firing during an animation
   const isScrolling = useRef(false);
 
   // Detect mobile
